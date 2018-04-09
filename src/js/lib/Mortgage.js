@@ -6,7 +6,7 @@ module.exports = class Mortgage {
       this.period = period;
     }
   
-    get monthlyPayment() {
+    get periodicPayment() {
         const P = parseFloat(this.principal);
         const r = parseFloat(this.interest)/100/ parseInt(this.period);
         const n = parseInt(this.term) * parseInt(this.period);

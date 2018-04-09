@@ -12,12 +12,12 @@ describe('Mortgage Calculator', () => {
         mortgage = new Mortgage(principal, interest, term, period);
     });
 
-    it('should have a monthly payment field', () => {
-        expect(mortgage.monthlyPayment).to.exist;
+    it('should have a periodic payment field', () => {
+        expect(mortgage.periodicPayment).to.exist;
     });
 
-    it('should return correct monthly pavement', () => {
-        expect(mortgage.monthlyPayment).to.equal(1945.09);
+    it('should return correct periodic payment', () => {
+        expect(mortgage.periodicPayment).to.equal(1945.09);
     });
 
     it('should have a getter for principal', () => {
